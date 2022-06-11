@@ -1,38 +1,63 @@
 .App {
-  text-align: center;
+	text-align: center;
+	box-sizing: border-box;
+	width: 600px;
+	height: 600px;
+	margin: 5em auto;
+	background-color: #0b2434;
+	border: 2px solid black;
+	color: #0b2434;
+}
+.App main {
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 500px;
+	height: 500px;
+	margin: 3em auto;
+	box-sizing: border-box;
+	padding: 1em;
+	background-color: #f5f5f5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.game-text {
+	width: 300px;
+	margin: 0.5em auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dice-box {
+	display: grid;
+	grid-template: auto auto / repeat(5, 1fr);
+	/* display: flex;
+	flex-wrap: wrap; */
+	justify-content: center;
+	margin: 1em auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.single-dice {
+	width: 35px;
+	height: 35px;
+	border-radius: 5px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+	text-align: center;
+	margin: 0.5em;
+	padding: 0.5em;
+	font-weight: bold;
+	font-size: 2rem;
+	cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+	background-color: #5035ff;
+	color: white;
+	padding: 1em 2em;
+	border: none;
+	border-radius: 5px;
+	font-size: 1em;
+	font-weight: 600;
+	margin-top: 1em;
+	cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:active {
+	box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
